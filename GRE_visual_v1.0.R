@@ -44,7 +44,7 @@ ggplot(dfm,aes(x=Dis,y=-log10(value),group=variable,colour=variable))+
     theme_bw()+
     scale_y_continuous(name='-Log10(P-value)')+
     scale_x_continuous(name='Distance between TSS and Peak (bp)')+
-    scale_color_manual(values=c("red", "blue","black"))+
+    scale_color_manual(values=c("red","blue","black"))+
     
     theme(panel.grid.major = element_blank(),
           panel.grid.minor = element_blank(),
