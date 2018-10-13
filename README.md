@@ -63,9 +63,8 @@ INPUT:
 OUTPUT:  
   cumulative genomic region enrichment stored in txt file
 
-EXECUTING EXAMPLE:
-
-  python gene_enrich_v1.0.py -x regionsToGenes.xls -g  mm9.20150218.knownGene.xls  -u up_genes.txt -U down_genes.txt -c control_genes.txt  -n 100 -w 10
+EXECUTING EXAMPLE:  
+python gene_enrich_v1.0.py -x regionsToGenes.xls -g  mm9.20150218.knownGene.xls  -u up_genes.txt -U down_genes.txt -c control_genes.txt  -n 100 -w 10
 
 
 Step 2 - Perform visualization
@@ -75,13 +74,13 @@ GRE_visual_v1.0.R
 DESCRIPTION:  
   Given a output txt file of cumulative genomic region enrichment for groups of genes of interest,  print out the cumulative figure in pdf format.
 
-INPUT:
+INPUT:  
     args[1]: txt file for cumulative genomic region enrichment
     args[2]: working directory
 
 OUTPUT: 
   Figures of cumulative enrichment number and P-value across a given range for distance between TSS to genomic regions in pdf format.
 
-EXECUTING EXAMPLE:
+EXECUTING EXAMPLE:  
   Rscript GRE_visual_v1.0.R up_genes.txt.regionsToGenes.xls.100.10.1000.cumulative.txt
 
