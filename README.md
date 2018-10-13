@@ -2,7 +2,6 @@
 Genomic region enrichment tool 
 
 =================
-=================
 
 Jie Lv  
 jlu@houstonmethodist.org  
