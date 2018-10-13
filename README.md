@@ -20,7 +20,7 @@ RUNNING
 
 Step 1 - Perform genomic regions enrichment analysis for groups of genes
 ------------------------
- $ gene_enrich_v1.0.py 
+gene_enrich_v1.0.py 
 
 DESCRIPTION:  
   read mapping file from genomic regions to genes and gene list of interet, and perform comparative analyses with the enriched genomic regions for different gene groups.
@@ -63,7 +63,7 @@ INPUT:
 OUTPUT:  
   cumulative genomic region enrichment stored in txt file
 
-EXECUTING EXAMPLE:  
+EXECUTING EXAMPLE::
 python gene_enrich_v1.0.py -x regionsToGenes.xls -g  mm9.20150218.knownGene.xls  -u up_genes.txt -U down_genes.txt -c control_genes.txt  -n 100 -w 10
 
 
