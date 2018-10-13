@@ -25,31 +25,27 @@ gene_enrich_v1.0.py
 DESCRIPTION:  
   read mapping file from genomic regions to genes and gene list of interet, and perform comparative analyses with the enriched genomic regions for different gene groups.
 
-INPUT:   
-  -h, --help              
-  show this help message and exit  
-  -x FILE, --xls=FILE   
-  danpos output showing locations of selected peaks
+INPUT:  
+
+```
+  -h, --help            show this help message and exit  
+  -x FILE, --xls=FILE   danpos output showing locations of selected peaks
                         (center, column 4 ) and its related transcripts  
                         (column 9) in txt format  
-  -g FILE, --gene=FILE  
-  gene annotation file in xls format from ucsc,
+  -g FILE, --gene=FILE  gene annotation file in xls format from ucsc,
                         containint mapping between transcipt id  (col 1) to
                         gene symbol (col 12)  
-  -s FILE, --symbol=FILE  
+  -s FILE, --symbol=FILE 
                         mapping between gene names from different sources:
                         e.g. ucsc gene symbol(col 1) to official gene symbol
                         (last col), acounting for the situation that xls and
                         gene list have different name system.  
-  -u FILE, --up=FILE    
-  list of first group of genes, e.g., upregulated genes
+  -u FILE, --up=FILE    list of first group of genes, e.g., upregulated genes
                         after some treatment  
-  -U FILE, --down=FILE  
-  list of second group of genes  
+  -U FILE, --down=FILE  list of second group of genes  
   -c FILE, --control=FILE  
                         list of control genes  
-  -S SIZE, --size=SIZE  
-  the number of control genes selected from all control
+  -S SIZE, --size=SIZE  the number of control genes selected from all control
                         genes, default is None and equals the number of first
                         group of genes  
   -n BREAK_NUMBER, --number=BREAK_NUMBER  
@@ -59,28 +55,35 @@ INPUT:
                         step size of break points for distance between peak
                         and TSS, the total range examined would be
                         [0,break_number*break_step]     
+```
 
 OUTPUT:  
   cumulative genomic region enrichment stored in txt file
 
-EXECUTING EXAMPLE:  
+EXECUTING EXAMPLE: 
+```
 python gene_enrich_v1.0.py -x regionsToGenes.xls -g  mm9.20150218.knownGene.xls  -u up_genes.txt -U down_genes.txt -c control_genes.txt  -n 100 -w 10
-
+```
 
 Step 2 - Perform visualization
 -------------------------
 GRE_visual_v1.0.R
 
 DESCRIPTION:  
-  Given a output txt file of cumulative genomic region enrichment for groups of genes of interest,  print out the cumulative figure in pdf format.
+Given a output txt file of cumulative genomic region enrichment for groups of genes of interest,  print out the cumulative figure in pdf format.
 
-INPUT:  
+INPUT:
+```
     args[1]: txt file for cumulative genomic region enrichment  
     args[2]: working directory
+```
 
 OUTPUT:  
   Figures of cumulative enrichment number and P-value across a given range for distance between TSS to genomic regions in pdf format.
 
-EXECUTING EXAMPLE:  
-  Rscript GRE_visual_v1.0.R up_genes.txt.regionsToGenes.xls.100.10.1000.cumulative.txt
+EXECUTING EXAMPLE:
+```
+
+Rscript GRE_visual_v1.0.R up_genes.txt.regionsToGenes.xls.100.10.1000.cumulative.txt
+```
 
