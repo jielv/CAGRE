@@ -75,7 +75,7 @@ DESCRIPTION:
   Given a output txt file of cumulative genomic region enrichment for groups of genes of interest,  print out the cumulative figure in pdf format.
 
 INPUT:  
-    args[1]: txt file for cumulative genomic region enrichment
+    args[1]: txt file for cumulative genomic region enrichment  
     args[2]: working directory
 
 OUTPUT:  
