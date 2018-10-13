@@ -64,6 +64,7 @@ OUTPUT:
   cumulative genomic region enrichment stored in txt file
 
 EXECUTING EXAMPLE::
+
 python gene_enrich_v1.0.py -x regionsToGenes.xls -g  mm9.20150218.knownGene.xls  -u up_genes.txt -U down_genes.txt -c control_genes.txt  -n 100 -w 10
 
 
