@@ -6,8 +6,8 @@ Maintainer
 ----------
 
 * GRE(Genomic Region Enrichment)
-    <jlu@houstonmethodist.org>
-    <kchen2@houstonmethodist.org>
+    <jlu@houstonmethodist.org>  
+    <kchen2@houstonmethodist.org>  
 
 Contributors
 ------------
