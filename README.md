@@ -78,7 +78,7 @@ INPUT:
     args[1]: txt file for cumulative genomic region enrichment
     args[2]: working directory
 
-OUTPUT: 
+OUTPUT:  
   Figures of cumulative enrichment number and P-value across a given range for distance between TSS to genomic regions in pdf format.
 
 EXECUTING EXAMPLE:  
