@@ -67,7 +67,7 @@ python gene_enrich_v1.0.py -x regionsToGenes.xls -g  mm9.20150218.knownGene.xls 
 
 Step 2 - Perform visualization
 -------------------------
-GRE_visual_v1.0.R
+CAGRE_visual_v1.0.R
 
 DESCRIPTION:  
 Given a output txt file of cumulative genomic region enrichment for groups of genes of interest,  print out the cumulative figure in pdf format.
@@ -84,6 +84,6 @@ OUTPUT:
 EXECUTING EXAMPLE:
 ```
 
-Rscript GRE_visual_v1.0.R up_genes.txt.regionsToGenes.xls.100.10.1000.cumulative.txt
+Rscript CAGRE_visual_v1.0.R up_genes.txt.regionsToGenes.xls.100.10.1000.cumulative.txt
 ```
 
