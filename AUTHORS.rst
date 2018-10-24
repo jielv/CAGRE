@@ -5,7 +5,7 @@ Credits
 Maintainer
 ----------
 
-* GRE(Genomic Region Enrichment)
+* CAGRE(Gumulative Analysis of Genomic Region Enrichment)
     <jlu@houstonmethodist.org>  
     <kchen2@houstonmethodist.org>  
 
