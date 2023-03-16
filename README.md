@@ -1,6 +1,6 @@
 # CAGRE
 
-Cumulative Analysis of Genomic Region Enrichment
+Cumulative Analysis of Genomic Region Enrichment v1.0
 
 =================
 
